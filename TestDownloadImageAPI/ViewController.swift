@@ -8,12 +8,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var downloadIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var downloadImageView: UIImageView!
+    
+    let downloadManager = DownloadManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        downloadIndicator.hidesWhenStopped = true
+        downloadIndicator.isHidden = true
+        infoLabel.isHidden = false
+        
     }
 
-
+    @IBAction func actionButton(_ sender: UIButton) {
+        downloadIndicator.startAnimating()
+        infoLabel.isHidden = true
+        downloadManager.download() { image in
+            DispatchQueue.main.async {
+                self.downloadImageView.image = image
+                self.downloadIndicator.stopAnimating()
+            }
+        }
+        
+    }
+    
 }
 

@@ -13,6 +13,7 @@
 		B5356577267538E700461481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5356575267538E700461481 /* Main.storyboard */; };
 		B5356579267538EA00461481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5356578267538EA00461481 /* Assets.xcassets */; };
 		B535657C267538EA00461481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B535657A267538EA00461481 /* LaunchScreen.storyboard */; };
+		B535658426753C6D00461481 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B535658326753C6D00461481 /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B5356578267538EA00461481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B535657B267538EA00461481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B535657D267538EA00461481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B535658326753C6D00461481 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B5356578267538EA00461481 /* Assets.xcassets */,
 				B535657A267538EA00461481 /* LaunchScreen.storyboard */,
 				B535657D267538EA00461481 /* Info.plist */,
+				B535658326753C6D00461481 /* DownloadManager.swift */,
 			);
 			path = TestDownloadImageAPI;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				B5356574267538E700461481 /* ViewController.swift in Sources */,
 				B5356570267538E700461481 /* AppDelegate.swift in Sources */,
 				B5356572267538E700461481 /* SceneDelegate.swift in Sources */,
+				B535658426753C6D00461481 /* DownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
